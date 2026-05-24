@@ -1,0 +1,12 @@
+.main-layout {
+  display: flex;
+}
+
+.main-content {
+  margin-left: 260px;
+  width: calc(100% - 260px);
+}
+
+.content-wrapper {
+  padding: 24px;
+}
