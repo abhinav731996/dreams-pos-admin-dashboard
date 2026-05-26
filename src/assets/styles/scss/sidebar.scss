@@ -1,38 +1,135 @@
+// sidebar.scss
+
 .sidebar {
   width: 260px;
-  background: #1b2850;
   height: 100vh;
+  background: $white;
+  border-right: 1px solid $border;
   position: fixed;
-  left: 0;
   top: 0;
-  padding: 20px;
+  left: 0;
+  overflow-y: auto;
 
-  .logo {
-    color: white;
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 40px;
+  &::-webkit-scrollbar {
+    width: 4px;
   }
 
-  ul {
-    list-style: none;
-    padding: 0;
+  &::-webkit-scrollbar-thumb {
+    background: #dcdcdc;
+    border-radius: 10px;
+  }
 
-    li {
-      margin-bottom: 10px;
+  .sidebar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    padding: 28px 14px;
+    border-bottom: 1px solid $border;
+    width: 100%;
+    position: relative;
 
-      a {
-        color: #cfd4e0;
-        text-decoration: none;
-        padding: 12px 15px;
-        display: flex;
-        gap: 12px;
-        border-radius: 10px;
+    .logo {
+      img {
+        width: 110px;
+        object-fit: contain;
+      }
+    }
 
-        &.active,
-        &:hover {
-          background: #ff9f43;
-          color: white;
+  }
+
+  .sidebar-padding {
+    padding: 18px 14px;
+  }
+
+  .sidebar-section {
+    margin-bottom: 25px;
+    border-bottom: 1px solid $border;
+    padding-bottom: 18px;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    .section-title {
+      font-size: 12px;
+      font-weight: 700;
+      color: $secondary;
+      margin-bottom: 14px;
+      text-transform: capitalize;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        margin-bottom: 6px;
+
+        a {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 11px 12px;
+          border-radius: 10px;
+          text-decoration: none;
+          color: #374151;
+          font-size: 14px;
+          font-weight: 600;
+          transition: all 0.3s ease;
+
+          .menu-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+
+            i {
+              font-size: 15px;
+              color: $text-gray;
+            }
+          }
+
+          .arrow-icon {
+            width: 12px;
+            height: 12px;
+            padding: 10px;
+            border: none;
+            border-radius: 50%;
+            background: #e4e8ec;
+            color: $text-gray;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+          }
+
+          &:hover {
+            background: #fff4eb;
+            color: $primary;
+            i {
+              color: $primary;
+            }
+
+            .arrow-icon {
+              background-color: #ffe3cb;
+              color: $primary;
+            }
+            
+          }
+
+          &.active {
+            background: #fff4eb;
+            color: $primary;
+            i {
+              color: $primary;
+            }
+
+            .arrow-icon {
+              background-color: #ffe3cb;
+              color: $primary;
+            }
+          }
         }
       }
     }
