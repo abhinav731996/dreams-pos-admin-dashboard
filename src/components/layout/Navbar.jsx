@@ -3,9 +3,9 @@ import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { logout } from "../../feature/authSlice";
 
-import profileImg from "../../assets/images/navbar/image-1.jpg";
-import freshmart from "../../assets/images/navbar/freshmart.jpg";
-import flag from "../../assets/images/navbar/flag.jpg";
+import profileImg from "../../../public/images/navbar/image-1.jpg";
+import freshmart from "../../../public/images/navbar/freshmart.jpg";
+import flag from "../../../public/images/navbar/flag.jpg";
 
 const Navbar = ({ showSidebar, setShowSidebar }) => {
   const dispatch = useDispatch();

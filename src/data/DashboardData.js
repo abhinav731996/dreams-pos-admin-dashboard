@@ -38,7 +38,7 @@ export const topSellingProducts = [
     name: "Charger Cable - Lighting",
     price: "$187",
     sales: "247+ Sales",
-    image: "src/assets/images/dashboard/topSelling/image.jpg",
+    image: "public/images/dashboard/topSelling/image.jpg",
     growth: "25%",
     status: "increase",
   },
@@ -47,7 +47,7 @@ export const topSellingProducts = [
     name: "Yves Saint Eau De Parfum",
     price: "$145",
     sales: "289+ Sales",
-    image: "src/assets/images/dashboard/topSelling/image-1.jpg",
+     image: "public/images/dashboard/topSelling/image-1.jpg",
     growth: "25%",
     status: "increase",
   },
@@ -56,7 +56,7 @@ export const topSellingProducts = [
     name: "Apple Airpods 2",
     price: "$458",
     sales: "300+ Sales",
-    image: "src/assets/images/dashboard/topSelling/image-2.jpg",
+     image: "public/images/dashboard/topSelling/image-2.jpg",
     growth: "25%",
     status: "increase",
   },
@@ -65,7 +65,7 @@ export const topSellingProducts = [
     name: "Vacuum Cleaner",
     price: "$139",
     sales: "225+ Sales",
-    image: "src/assets/images/dashboard/topSelling/image-3.jpg",
+     image: "public/images/dashboard/topSelling/image-3.jpg",
     growth: "21%",
     status: "decrease",
   },
@@ -74,7 +74,7 @@ export const topSellingProducts = [
     name: "Samsung Galaxy S21 Fe 5g",
     price: "$898",
     sales: "365+ Sales",
-    image: "src/assets/images/dashboard/topSelling/image-4.jpg",
+     image: "public/images/dashboard/topSelling/image-4.jpg",
     growth: "25%",
     status: "increase",
   },
@@ -86,35 +86,35 @@ export const lowStockProducts = [
     name: "Vacuum Cleaner Robot",
     productId: "#940004",
     stock: 21,
-    image: "src/assets/images/dashboard/lowStock/image.jpg",
+    image: "public/images/dashboard/lowStock/image.jpg",
   },
   {
     id: 2,
     name: "Dell XPS 13",
     productId: "#665814",
     stock: 8,
-    image: "src/assets/images/dashboard/lowStock/image-1.jpg",
+    image: "public/images/dashboard/lowStock/image-1.jpg",
   },
   {
     id: 3,
     name: "KitchenAid Stand Mixer",
     productId: "#325569",
     stock: 14,
-    image: "src/assets/images/dashboard/lowStock/image-2.jpg",
+    image: "public/images/dashboard/lowStock/image-2.jpg",
   },
   {
     id: 4,
     name: "Levi's Trucker Jacket",
     productId: "#124588",
     stock: 12,
-    image: "src/assets/images/dashboard/lowStock/image-3.jpg",
+    image: "public/images/dashboard/lowStock/image-3.jpg",
   },
   {
     id: 5,
     name: "Lay's Classic",
     productId: "#365586",
     stock: 10,
-    image: "src/assets/images/dashboard/lowStock/image-4.jpg",
+    image: "public/images/dashboard/lowStock/image-4.jpg",
   },
 ];
 
@@ -126,7 +126,7 @@ export const recentSales = [
     amount: "$640",
     date: "Today",
     status: "Processing",
-    image: "src/assets/images/dashboard/recentSales/image.jpg",
+    image: "public/images/dashboard/recentSales/image.jpg",
   },
   {
     id: 2,
@@ -135,7 +135,7 @@ export const recentSales = [
     amount: "$126",
     date: "Today",
     status: "Cancelled",
-    image: "src/assets/images/dashboard/recentSales/image-1.jpg",
+    image: "public/images/dashboard/recentSales/image.jpg",
   },
   {
     id: 3,
@@ -144,7 +144,7 @@ export const recentSales = [
     amount: "$89",
     date: "15 Jan 2025",
     status: "Onhold",
-    image: "src/assets/images/dashboard/recentSales/image-2.jpg",
+    image: "public/images/dashboard/recentSales/image.jpg",
   },
   {
     id: 4,
@@ -153,7 +153,7 @@ export const recentSales = [
     amount: "$65",
     date: "12 Jan 2025",
     status: "Processing",
-    image: "src/assets/images/dashboard/recentSales/image-3.jpg",
+    image: "public/images/dashboard/recentSales/image.jpg",
   },
   {
     id: 5,
@@ -162,7 +162,7 @@ export const recentSales = [
     amount: "$87.56",
     date: "11 Jan 2025",
     status: "Completed",
-    image: "src/assets/images/dashboard/recentSales/image-4.jpg",
+    image: "public/images/dashboard/recentSales/image.jpg",
   },
 ];
 
@@ -175,7 +175,7 @@ export const recentTransactions = [
     date: "24 May 2025",
     total: "$4560",
     status: "Completed",
-    image: "src/assets/images/dashboard/recentTransactions/image.jpg",
+    image: "public/images/dashboard/recentTransactions/image.jpg",
   },
   {
     id: 2,
@@ -184,7 +184,7 @@ export const recentTransactions = [
     date: "23 May 2025",
     total: "$3569",
     status: "Completed",
-    image: "src/assets/images/dashboard/recentTransactions/image-1.jpg",
+    image: "public/images/dashboard/recentTransactions/image-1.jpg",
   },
   {
     id: 3,
@@ -193,7 +193,7 @@ export const recentTransactions = [
     date: "22 May 2025",
     total: "$2659",
     status: "Draft",
-    image: "src/assets/images/dashboard/recentTransactions/image-2.jpg",
+    image: "public/images/dashboard/recentTransactions/image-2.jpg",
   },
   {
     id: 4,
@@ -202,7 +202,7 @@ export const recentTransactions = [
     date: "21 May 2025",
     total: "$2155",
     status: "Completed",
-    image: "src/assets/images/dashboard/recentTransactions/image-3.jpg",
+    image: "public/images/dashboard/recentTransactions/image-3.jpg",
   },
 ];
 
@@ -213,7 +213,7 @@ export const topCustomers = [
     country: "USA",
     orders: 24,
     amount: "$8965",
-    image: "src/assets/images/dashboard/topCustomers/image.jpg",
+    image: "public/images/dashboard/topCustomers/image.jpg",
   },
   {
     id: 2,
@@ -221,7 +221,7 @@ export const topCustomers = [
     country: "UAE",
     orders: 22,
     amount: "$6985",
-    image: "src/assets/images/dashboard/topCustomers/image-1.jpg",
+    image: "public/images/dashboard/topCustomers/image-1.jpg",
   },
   {
     id: 3,
@@ -229,7 +229,7 @@ export const topCustomers = [
     country: "Germany",
     orders: 14,
     amount: "$5366",
-    image: "src/assets/images/dashboard/topCustomers/image-2.jpg",
+    image: "public/images/dashboard/topCustomers/image-2.jpg",
   },
   {
     id: 4,
@@ -237,7 +237,7 @@ export const topCustomers = [
     country: "Belgium",
     orders: 8,
     amount: "$4569",
-    image: "src/assets/images/dashboard/topCustomers/image-3.jpg",
+    image: "public/images/dashboard/topCustomers/image-3.jpg",
   },
   {
     id: 5,
@@ -245,6 +245,6 @@ export const topCustomers = [
     country: "Greenland",
     orders: 14,
     amount: "$35,698",
-    image: "src/assets/images/dashboard/topCustomers/image-4.jpg",
+    image: "public/images/dashboard/topCustomers/image-4.jpg",
   },
 ];
