@@ -5,7 +5,7 @@ import Dashboard from '../pages/dashboard/Dashboard'
 import Products from '../pages/products/Products'
 import Orders from '../pages/orders/Orders'
 // import Customers from '../pages/customers/Customers'
-import Settings from '../pages/settings/Settings'
+import Settings from '../pages/settings/settings'
 import NotFound from '../pages/errors/NotFound'
 import PrivateRoute from './PrivateRoute'
 
