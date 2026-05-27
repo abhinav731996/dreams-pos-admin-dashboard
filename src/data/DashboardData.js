@@ -1,28 +1,44 @@
-// export const dashboardStats = [
-//   {
-//     id: 1,
-//     name: "Charger Cable - Lighting",
-//     price: "$187",
-//     sales: "247+ Sales",
-//     image: "/images/products/product-1.png",
-//     growth: "25%",
-//     status: "increase",
-//     stock: "0",
-//     category: "electronics",
-//     order: "",
-//   },
-// ];
-// // try to make a single data but that doesn't work
+export const overview = [
+  {
+    title: "Profit",
+    amount: "$8,458,798",
+    growth: "+35%",
+    icon: "bi-stack",
+    iconClass: "blue-icon",
+  },
 
+  {
+    title: "Invoice Due",
+    amount: "$48,988,78",
+    growth: "-19%",
+    icon: "bi-pie-chart",
+    iconClass: "green-icon",
+  },
 
-// For items 
+  {
+    title: "Total Expenses",
+    amount: "$8,980,097",
+    growth: "+41%",
+    icon: "bi-coin",
+    iconClass: "orange-icon",
+  },
+
+  {
+    title: "Total Payment Returns",
+    amount: "$78,458,798",
+    growth: "-20%",
+    icon: "bi-hash",
+    iconClass: "purple-icon",
+  },
+];
+
 export const topSellingProducts = [
   {
     id: 1,
     name: "Charger Cable - Lighting",
     price: "$187",
     sales: "247+ Sales",
-    image: "/images/products/product-1.png",
+    image: "src/assets/images/dashboard/topSelling/image.jpg",
     growth: "25%",
     status: "increase",
   },
@@ -31,7 +47,7 @@ export const topSellingProducts = [
     name: "Yves Saint Eau De Parfum",
     price: "$145",
     sales: "289+ Sales",
-    image: "/images/products/product-2.png",
+    image: "src/assets/images/dashboard/topSelling/image-1.jpg",
     growth: "25%",
     status: "increase",
   },
@@ -40,7 +56,7 @@ export const topSellingProducts = [
     name: "Apple Airpods 2",
     price: "$458",
     sales: "300+ Sales",
-    image: "/images/products/product-3.png",
+    image: "src/assets/images/dashboard/topSelling/image-2.jpg",
     growth: "25%",
     status: "increase",
   },
@@ -49,7 +65,7 @@ export const topSellingProducts = [
     name: "Vacuum Cleaner",
     price: "$139",
     sales: "225+ Sales",
-    image: "/images/products/product-4.png",
+    image: "src/assets/images/dashboard/topSelling/image-3.jpg",
     growth: "21%",
     status: "decrease",
   },
@@ -58,7 +74,7 @@ export const topSellingProducts = [
     name: "Samsung Galaxy S21 Fe 5g",
     price: "$898",
     sales: "365+ Sales",
-    image: "/images/products/product-5.png",
+    image: "src/assets/images/dashboard/topSelling/image-4.jpg",
     growth: "25%",
     status: "increase",
   },
@@ -70,35 +86,35 @@ export const lowStockProducts = [
     name: "Vacuum Cleaner Robot",
     productId: "#940004",
     stock: 21,
-    image: "/images/products/stock-1.png",
+    image: "src/assets/images/dashboard/lowStock/image.jpg",
   },
   {
     id: 2,
     name: "Dell XPS 13",
     productId: "#665814",
     stock: 8,
-    image: "/images/products/stock-2.png",
+    image: "src/assets/images/dashboard/lowStock/image-1.jpg",
   },
   {
     id: 3,
     name: "KitchenAid Stand Mixer",
     productId: "#325569",
     stock: 14,
-    image: "/images/products/stock-3.png",
+    image: "src/assets/images/dashboard/lowStock/image-2.jpg",
   },
   {
     id: 4,
     name: "Levi's Trucker Jacket",
     productId: "#124588",
     stock: 12,
-    image: "/images/products/stock-4.png",
+    image: "src/assets/images/dashboard/lowStock/image-3.jpg",
   },
   {
     id: 5,
     name: "Lay's Classic",
     productId: "#365586",
     stock: 10,
-    image: "/images/products/stock-5.png",
+    image: "src/assets/images/dashboard/lowStock/image-4.jpg",
   },
 ];
 
@@ -110,7 +126,7 @@ export const recentSales = [
     amount: "$640",
     date: "Today",
     status: "Processing",
-    image: "/images/sales/sale-1.png",
+    image: "src/assets/images/dashboard/recentSales/image.jpg",
   },
   {
     id: 2,
@@ -119,7 +135,7 @@ export const recentSales = [
     amount: "$126",
     date: "Today",
     status: "Cancelled",
-    image: "/images/sales/sale-2.png",
+    image: "src/assets/images/dashboard/recentSales/image-1.jpg",
   },
   {
     id: 3,
@@ -128,7 +144,7 @@ export const recentSales = [
     amount: "$89",
     date: "15 Jan 2025",
     status: "Onhold",
-    image: "/images/sales/sale-3.png",
+    image: "src/assets/images/dashboard/recentSales/image-2.jpg",
   },
   {
     id: 4,
@@ -137,7 +153,7 @@ export const recentSales = [
     amount: "$65",
     date: "12 Jan 2025",
     status: "Processing",
-    image: "/images/sales/sale-4.png",
+    image: "src/assets/images/dashboard/recentSales/image-3.jpg",
   },
   {
     id: 5,
@@ -146,12 +162,11 @@ export const recentSales = [
     amount: "$87.56",
     date: "11 Jan 2025",
     status: "Completed",
-    image: "/images/sales/sale-5.png",
+    image: "src/assets/images/dashboard/recentSales/image-4.jpg",
   },
 ];
 
-
-// for customers 
+// for customers
 export const recentTransactions = [
   {
     id: 1,
@@ -160,7 +175,7 @@ export const recentTransactions = [
     date: "24 May 2025",
     total: "$4560",
     status: "Completed",
-    image: "/images/users/user-1.png",
+    image: "src/assets/images/dashboard/recentTransactions/image.jpg",
   },
   {
     id: 2,
@@ -169,7 +184,7 @@ export const recentTransactions = [
     date: "23 May 2025",
     total: "$3569",
     status: "Completed",
-    image: "/images/users/user-2.png",
+    image: "src/assets/images/dashboard/recentTransactions/image-1.jpg",
   },
   {
     id: 3,
@@ -178,7 +193,7 @@ export const recentTransactions = [
     date: "22 May 2025",
     total: "$2659",
     status: "Draft",
-    image: "/images/users/user-3.png",
+    image: "src/assets/images/dashboard/recentTransactions/image-2.jpg",
   },
   {
     id: 4,
@@ -187,7 +202,7 @@ export const recentTransactions = [
     date: "21 May 2025",
     total: "$2155",
     status: "Completed",
-    image: "/images/users/user-4.png",
+    image: "src/assets/images/dashboard/recentTransactions/image-3.jpg",
   },
 ];
 
@@ -198,7 +213,7 @@ export const topCustomers = [
     country: "USA",
     orders: 24,
     amount: "$8965",
-    image: "/images/customers/customer-1.png",
+    image: "src/assets/images/dashboard/topCustomers/image.jpg",
   },
   {
     id: 2,
@@ -206,7 +221,7 @@ export const topCustomers = [
     country: "UAE",
     orders: 22,
     amount: "$6985",
-    image: "/images/customers/customer-2.png",
+    image: "src/assets/images/dashboard/topCustomers/image-1.jpg",
   },
   {
     id: 3,
@@ -214,7 +229,7 @@ export const topCustomers = [
     country: "Germany",
     orders: 14,
     amount: "$5366",
-    image: "/images/customers/customer-3.png",
+    image: "src/assets/images/dashboard/topCustomers/image-2.jpg",
   },
   {
     id: 4,
@@ -222,7 +237,7 @@ export const topCustomers = [
     country: "Belgium",
     orders: 8,
     amount: "$4569",
-    image: "/images/customers/customer-4.png",
+    image: "src/assets/images/dashboard/topCustomers/image-3.jpg",
   },
   {
     id: 5,
@@ -230,6 +245,6 @@ export const topCustomers = [
     country: "Greenland",
     orders: 14,
     amount: "$35,698",
-    image: "/images/customers/customer-5.png",
+    image: "src/assets/images/dashboard/topCustomers/image-4.jpg",
   },
 ];

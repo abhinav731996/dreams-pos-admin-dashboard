@@ -269,3 +269,204 @@
     }
   }
 }
+
+//////////////////////////////////////
+// LARGE DEVICES
+//////////////////////////////////////
+
+@media (max-width: 1200px) {
+
+  .top-navbar {
+
+    .search-bar {
+      width: 220px;
+    }
+
+    .store-dropdown span {
+      display: none;
+    }
+
+    .add-btn,
+    .pos-btn {
+      padding: 0 12px;
+      font-size: 13px;
+    }
+  }
+}
+
+//////////////////////////////////////
+// TABLETS
+//////////////////////////////////////
+
+@media (max-width: 992px) {
+
+  .top-navbar {
+    padding: 0 16px;
+
+    .navbar-left {
+      width: auto;
+      gap: 12px;
+    }
+
+    .search-bar {
+      width: 180px;
+
+      .shortcut-key {
+        display: none;
+      }
+    }
+
+    .store-dropdown {
+      display: none;
+    }
+
+    .add-btn span,
+    .pos-btn span {
+      display: none;
+    }
+
+    .add-btn,
+    .pos-btn {
+      width: 40px;
+      padding: 0;
+
+      justify-content: center;
+    }
+
+    .vertical-line {
+      display: none;
+    }
+  }
+}
+
+//////////////////////////////////////
+// MOBILE DEVICES
+//////////////////////////////////////
+
+@media (max-width: 768px) {
+
+  .top-navbar {
+    height: 65px;
+    padding: 0 12px;
+
+    .navbar-left {
+      gap: 10px;
+    }
+
+    .toggle-btn {
+      width: 35px;
+      height: 35px;
+
+      position: static;
+      padding: 0;
+      font-size: 14px;
+    }
+
+    .search-bar {
+      width: 150px;
+      height: 38px;
+
+      input {
+        font-size: 13px;
+      }
+    }
+
+    .navbar-right {
+      gap: 8px;
+    }
+
+    .add-btn,
+    .pos-btn {
+      display: none;
+    }
+
+    .navbar-icons {
+      gap: 6px;
+
+      button {
+        width: 36px;
+        height: 36px;
+
+        border-radius: 8px;
+
+        i {
+          font-size: 14px;
+        }
+      }
+    }
+
+    .profile-img {
+      width: 36px;
+      height: 36px;
+    }
+
+    .settings-dropdown {
+      width: 160px;
+      right: -10px;
+    }
+  }
+}
+
+//////////////////////////////////////
+// SMALL MOBILE
+//////////////////////////////////////
+
+@media (max-width: 576px) {
+
+  .top-navbar {
+
+    .search-bar {
+      width: 120px;
+
+      input {
+        width: 80px;
+      }
+    }
+
+    .navbar-icons {
+
+      button:nth-child(2),
+      button:nth-child(3) {
+        display: none;
+      }
+    }
+  }
+}
+
+//////////////////////////////////////
+// EXTRA SMALL MOBILE
+//////////////////////////////////////
+
+@media (max-width: 420px) {
+
+  .top-navbar {
+
+    .search-bar {
+      width: 42px;
+      justify-content: center;
+
+      input,
+      .shortcut-key {
+        display: none;
+      }
+
+      .search-left {
+        justify-content: center;
+      }
+    }
+
+    .navbar-icons {
+      gap: 4px;
+
+      button {
+        width: 34px;
+        height: 34px;
+      }
+    }
+
+    .profile-img {
+      width: 34px;
+      height: 34px;
+    }
+  }
+}

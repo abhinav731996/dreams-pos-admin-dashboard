@@ -57,7 +57,7 @@ const Navbar = () => {
           </div>
 
           <span className="shortcut-key">
-            <span> <i class="bi bi-command"></i> </span>
+            <span> <i className="bi bi-command"></i> </span>
               K
           </span>
         </div>
@@ -83,7 +83,7 @@ const Navbar = () => {
 
         {/* POS BUTTON */}
         <button className="pos-btn">
-          <i class="bi bi-laptop"></i>
+          <i className="bi bi-laptop"></i>
           POS
         </button>
 

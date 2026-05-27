@@ -1,5 +1,3 @@
-// Sidebar.jsx
-
 import { NavLink } from "react-router-dom";
 import logo from "../../assets/icons/logo/Logo.png";
 
@@ -258,7 +256,7 @@ const Sidebar = () => {
             <li>
               <NavLink to="/sales">
                 <div className="menu-item">
-                  <i class="bi bi-ticket-perforated"></i>
+                  <i className="bi bi-ticket-perforated"></i>
                   <span>Coupons</span>
                 </div>
               </NavLink>
@@ -267,7 +265,7 @@ const Sidebar = () => {
             <li>
               <NavLink to="/invoices">
                 <div className="menu-item">
-                  <i class="bi bi-wallet2"></i>
+                  <i className="bi bi-wallet2"></i>
                   <span>Gift Card</span>
                 </div>
               </NavLink>
@@ -276,7 +274,7 @@ const Sidebar = () => {
             <li>
               <NavLink to="/pos">
                 <div className="menu-item">
-                  <i class="bi bi-file-earmark-medical"></i>
+                  <i className="bi bi-file-earmark-medical"></i>
                   <span>Discount</span>
                 </div>
 
@@ -294,7 +292,7 @@ const Sidebar = () => {
             <li>
               <NavLink to="/sales">
                 <div className="menu-item">
-                  <i class="bi bi-bag"></i>
+                  <i className="bi bi-bag"></i>
                   <span>Purchases</span>
                 </div>
               </NavLink>
@@ -303,7 +301,7 @@ const Sidebar = () => {
             <li>
               <NavLink to="/invoices">
                 <div className="menu-item">
-                  <i class="bi bi-file-earmark-check"></i>
+                  <i className="bi bi-file-earmark-check"></i>
                   <span>Purchase Order</span>
                 </div>
               </NavLink>
@@ -312,10 +310,9 @@ const Sidebar = () => {
             <li>
               <NavLink to="/pos">
                 <div className="menu-item">
-                  <i class="bi bi-file-earmark-arrow-up"></i>
+                  <i className="bi bi-file-earmark-arrow-up"></i>
                   <span>Purchase Return</span>
                 </div>
-
               </NavLink>
             </li>
           </ul>
@@ -329,7 +326,7 @@ const Sidebar = () => {
             <li>
               <NavLink to="/sales">
                 <div className="menu-item">
-                  <i class="bi bi-file-break"></i>
+                  <i className="bi bi-file-break"></i>
                   <span>Expenses</span>
                 </div>
 
@@ -340,7 +337,7 @@ const Sidebar = () => {
             <li>
               <NavLink to="/invoices">
                 <div className="menu-item">
-                  <i class="bi bi-file-earmark-diff"></i>
+                  <i className="bi bi-file-earmark-diff"></i>
                   <span>Income</span>
                 </div>
 
@@ -351,30 +348,27 @@ const Sidebar = () => {
             <li>
               <NavLink to="/pos">
                 <div className="menu-item">
-                  <i class="bi bi-bank"></i>
+                  <i className="bi bi-bank"></i>
                   <span>Bank Accounts</span>
                 </div>
-
               </NavLink>
             </li>
 
             <li>
               <NavLink to="/pos">
                 <div className="menu-item">
-                  <i class="bi bi-piggy-bank"></i>
+                  <i className="bi bi-piggy-bank"></i>
                   <span>Money Transfer</span>
                 </div>
-
               </NavLink>
             </li>
 
             <li>
               <NavLink to="/pos">
                 <div className="menu-item">
-                  <i class="bi bi-file-earmark-binary"></i>
+                  <i className="bi bi-file-earmark-binary"></i>
                   <span>Balance Sheet</span>
                 </div>
-
               </NavLink>
             </li>
 
@@ -384,27 +378,24 @@ const Sidebar = () => {
                   <i className="bi bi-exclamation-circle"></i>
                   <span>Trial Balance</span>
                 </div>
-
               </NavLink>
             </li>
 
             <li>
               <NavLink to="/pos">
                 <div className="menu-item">
-                  <i class="bi bi-search"></i>
+                  <i className="bi bi-search"></i>
                   <span>Cash Flow</span>
                 </div>
-
               </NavLink>
             </li>
 
             <li>
               <NavLink to="/pos">
                 <div className="menu-item">
-                  <i class="bi bi-file-earmark-font"></i>
+                  <i className="bi bi-file-earmark-font"></i>
                   <span>Account Statement</span>
                 </div>
-
               </NavLink>
             </li>
           </ul>
@@ -418,7 +409,7 @@ const Sidebar = () => {
             <li>
               <NavLink to="/sales">
                 <div className="menu-item">
-                  <i class="bi bi-people"></i>
+                  <i className="bi bi-people"></i>
                   <span>Customers</span>
                 </div>
               </NavLink>
@@ -427,7 +418,7 @@ const Sidebar = () => {
             <li>
               <NavLink to="/invoices">
                 <div className="menu-item">
-                  <i class="bi bi-person-up"></i>
+                  <i className="bi bi-person-up"></i>
                   <span>Biller</span>
                 </div>
               </NavLink>
@@ -436,35 +427,31 @@ const Sidebar = () => {
             <li>
               <NavLink to="/pos">
                 <div className="menu-item">
-                  <i class="bi bi-person-down"></i>
+                  <i className="bi bi-person-down"></i>
                   <span>Suppliers</span>
                 </div>
-
               </NavLink>
             </li>
 
             <li>
               <NavLink to="/pos">
                 <div className="menu-item">
-                  <i class="bi bi-houses"></i>
+                  <i className="bi bi-houses"></i>
                   <span>Stores</span>
                 </div>
-
               </NavLink>
             </li>
 
             <li>
               <NavLink to="/pos">
                 <div className="menu-item">
-                  <i class="bi bi-archive"></i>
+                  <i className="bi bi-archive"></i>
                   <span>Warehouses</span>
                 </div>
-
               </NavLink>
             </li>
           </ul>
         </div>
-
 
         {/* HRM */}
         <div className="sidebar-section">
@@ -474,7 +461,7 @@ const Sidebar = () => {
             <li>
               <NavLink to="/sales">
                 <div className="menu-item">
-                  <i class="bi bi-person"></i>
+                  <i className="bi bi-person"></i>
                   <span>Employees</span>
                 </div>
               </NavLink>
@@ -483,7 +470,7 @@ const Sidebar = () => {
             <li>
               <NavLink to="/invoices">
                 <div className="menu-item">
-                  <i class="bi bi-compass"></i>
+                  <i className="bi bi-compass"></i>
                   <span>Department</span>
                 </div>
               </NavLink>
@@ -492,18 +479,13 @@ const Sidebar = () => {
             <li>
               <NavLink to="/pos">
                 <div className="menu-item">
-                  <i class="bi bi-share"></i>
+                  <i className="bi bi-share"></i>
                   <span>Desigination</span>
                 </div>
-
               </NavLink>
             </li>
-
-            
           </ul>
         </div>
-
-
       </div>
     </aside>
   );
