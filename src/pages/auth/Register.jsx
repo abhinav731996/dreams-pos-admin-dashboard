@@ -21,22 +21,46 @@ const Register = () => {
     });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+const handleSubmit = (e) => {
+  e.preventDefault();
 
-    if (formData.password !== formData.confirmPassword) {
-      alert("Passwords do not match");
-      return;
-    }
+  if (formData.password !== formData.confirmPassword) {
+    alert("Passwords do not match");
+    return;
+  }
 
-    const users = JSON.parse(localStorage.getItem("dreamsUsers")) || [];
+  // Existing Users
+  const users =
+    JSON.parse(localStorage.getItem("dreamsUsers")) || [];
 
-    users.push(formData);
+  // Check duplicate email
+  const userExists = users.find(
+    (user) => user.email === formData.email
+  );
 
-    localStorage.setItem("dreamsUsers", JSON.stringify(users));
+  if (userExists) {
+    alert("Email already exists");
+    return;
+  }
 
-    navigate("/");
+  // Remove confirmPassword before saving
+  const newUser = {
+    name: formData.name,
+    email: formData.email,
+    password: formData.password,
   };
+
+  users.push(newUser);
+
+  localStorage.setItem(
+    "dreamsUsers",
+    JSON.stringify(users)
+  );
+
+  alert("Registration Successful");
+
+  navigate("/");
+};
 
   return (
     <div className="auth-page">

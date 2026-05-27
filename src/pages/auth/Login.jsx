@@ -6,32 +6,44 @@ import { login } from "../../feature/authSlice";
 import authImg from "/images/auth/login.jpg";
 import logo from "../../assets/icons/logo/Logo.png";
 
+import {AdminUser} from '../../data/UserData'
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
+  
+
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+  e.preventDefault();
 
-    const users = JSON.parse(localStorage.getItem("dreamsUsers")) || [];
+  // LocalStorage Users
+  const localUsers =
+    JSON.parse(localStorage.getItem("dreamsUsers")) || [];
 
-    const matchedUser = users.find(
-      (user) => user.email === email && user.password === password
-    );
+  // Merge Admin + Local Users
+  const allUsers = [...AdminUser, ...localUsers];
 
-    if (!matchedUser) {
-      alert("Invalid Credentials");
-      return;
-    }
+  // Match User
+  const matchedUser = allUsers.find(
+    (user) =>
+      user.email === email &&
+      user.password === password
+  );
 
-    dispatch(login(matchedUser));
+  if (!matchedUser) {
+    alert("Invalid Credentials");
+    return;
+  }
 
-    navigate("/dashboard");
-  };
+  // Save Logged User
+  dispatch(login(matchedUser));
+
+  navigate("/dashboard");
+};
 
   return (
     <div className="auth-page">
