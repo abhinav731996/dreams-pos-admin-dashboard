@@ -7,7 +7,7 @@ import profileImg from "../../assets/images/navbar/image-1.jpg";
 import freshmart from "../../assets/images/navbar/freshmart.jpg";
 import flag from "../../assets/images/navbar/flag.jpg";
 
-const Navbar = () => {
+const Navbar = ({ showSidebar, setShowSidebar }) => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
@@ -23,10 +23,7 @@ const Navbar = () => {
   // CLOSE DROPDOWN OUTSIDE CLICK
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (
-        settingsRef.current &&
-        !settingsRef.current.contains(event.target)
-      ) {
+      if (settingsRef.current && !settingsRef.current.contains(event.target)) {
         setShowSettings(false);
       }
     };
@@ -40,35 +37,38 @@ const Navbar = () => {
 
   return (
     <header className="top-navbar">
-
       {/* LEFT */}
       <div className="navbar-left">
-
-        <button className="toggle-btn">
-          <i className="bi bi-chevron-double-left"></i>
+        <button
+          className="toggle-btn"
+          onClick={() => setShowSidebar(!showSidebar)}
+        >
+          <i className="bi  bi-chevron-double-left"></i>
         </button>
 
         {/* SEARCH */}
         <div className="search-bar">
           <div className="search-left">
-          <i className="bi bi-search"></i>
+            <i className="bi bi-search"></i>
 
-          <input type="text" placeholder="Search" />
+            <input type="text" placeholder="Search" />
           </div>
 
           <span className="shortcut-key">
-            <span> <i className="bi bi-command"></i> </span>
-              K
+            <span>
+              {" "}
+              <i className="bi bi-command"></i>{" "}
+            </span>
+            K
           </span>
         </div>
       </div>
 
       {/* RIGHT */}
       <div className="navbar-right">
-
         {/* STORE */}
         <div className="store-dropdown">
-          <img src={freshmart} alt="profile" width="20px"/>
+          <img src={freshmart} alt="profile" width="20px" />
 
           <span>Freshmart</span>
 
@@ -91,9 +91,8 @@ const Navbar = () => {
 
         {/* ICONS */}
         <div className="navbar-icons">
-
           <button>
-            <img src={flag} alt="profile" width="20px"/>
+            <img src={flag} alt="profile" width="20px" />
           </button>
 
           <button>
@@ -111,21 +110,16 @@ const Navbar = () => {
 
           {/* SETTINGS */}
           <div className="settings-wrapper" ref={settingsRef}>
-
-            <button
-              onClick={() => setShowSettings(!showSettings)}
-            >
+            <button onClick={() => setShowSettings(!showSettings)}>
               <i className="bi bi-gear"></i>
             </button>
 
             {showSettings && (
               <div className="settings-dropdown">
-
                 <button onClick={handleLogout}>
                   <i className="bi bi-box-arrow-right"></i>
                   Logout
                 </button>
-
               </div>
             )}
           </div>
@@ -134,7 +128,6 @@ const Navbar = () => {
           <div className="profile-img">
             <img src={profileImg} alt="profile" />
           </div>
-
         </div>
       </div>
     </header>

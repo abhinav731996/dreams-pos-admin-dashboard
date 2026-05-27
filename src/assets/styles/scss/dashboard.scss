@@ -101,157 +101,167 @@
   /* ================= BIG STATS ================= */
 
   .dashboard-stat {
-    border-radius: 16px;
-    padding: 20px;
-    color: $white;
+  border-radius: 16px;
+  padding: 20px;
+  color: $white;
+
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+
+  .stat-icon {
+    min-width: 56px;
+    width: 56px;
+    height: 56px;
+
+    border-radius: 14px;
+    background: $white;
 
     display: flex;
     align-items: center;
-    gap: 16px;
+    justify-content: center;
+    flex-shrink: 0;
 
-    height: 100%;
-    position: relative;
+    i {
+      font-size: 24px;
+      font-weight: 600;
+    }
+  }
+
+  .stat-content {
+    flex: 1;
+    min-width: 0;
+  }
+
+  p {
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.85);
+  }
+
+  .stat-value {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+  }
+
+  h4 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+    color: $white;
+
+    white-space: nowrap;
     overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .heigher,
+  .lower {
+    min-width: 65px;
+    height: 28px;
+
+    padding: 0 10px;
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    background: $white;
+
+    flex-shrink: 0;
+
+    i {
+      font-size: 14px;
+    }
+  }
+
+  .heigher {
+    color: $success;
+  }
+
+  .lower {
+    color: $danger;
+  }
+
+  /* CARD COLORS */
+
+  &.orange {
+    background: $primary;
+
+    .stat-icon i {
+      color: $primary;
+    }
+  }
+
+  &.dark {
+    background: $secondary;
+
+    .stat-icon i {
+      color: $secondary;
+    }
+  }
+
+  &.green {
+    background: $success;
+
+    .stat-icon i {
+      color: $success;
+    }
+  }
+
+  &.blue {
+    background: $info;
+
+    .stat-icon i {
+      color: $info;
+    }
+  }
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 767px) {
+  .dashboard-stat {
+    padding: 18px;
+
+    h4 {
+      font-size: 20px;
+    }
 
     .stat-icon {
-      min-width: 56px;
-      width: 56px;
-      height: 56px;
-
-      border-radius: 14px;
-      background: $white;
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      width: 50px;
+      height: 50px;
 
       i {
-        font-size: 24px;
-        font-weight: 600;
-      }
-      .bi-file-earmark-text {
-        color: $primary;
-      }
-
-      .bi-repeat {
-        color: $secondary;
-      }
-
-      .bi-gift {
-        color: $success;
-      }
-
-      .bi-caret-down-square {
-        color: $info;
+        font-size: 20px;
       }
     }
 
-    /* ICON COLORS */
-
-    &.orange {
-      background: $primary;
-
-      .stat-icon i {
-        color: $primary;
-      }
-    }
-
-    &.dark {
-      background: $secondary;
-
-      .stat-icon i {
-        color: $secondary;
-      }
-    }
-
-    &.green {
-      background: $success;
-
-      .stat-icon i {
-        color: $success;
-      }
-    }
-
-    &.blue {
-      background: $info;
-
-      .stat-icon i {
-        color: $info;
-      }
-    }
-
-    p {
-      margin-bottom: 6px;
-      font-size: 14px;
-      font-weight: 500;
-      color: rgba(255, 255, 255, 0.85);
-    }
-
-    h3 {
-      margin: 0;
-      font-size: 26px;
-      font-weight: 700;
-      line-height: 1;
-      color: $white;
-    }
-
-    .d-flex {
-      align-items: center;
-      flex-wrap: wrap;
+    .stat-value {
+      gap: 6px;
     }
 
     .heigher,
     .lower {
-      min-width: 65px;
-      height: 28px;
-
-      padding: 0 10px;
-      border-radius: 8px;
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 2px;
-
-      font-size: 12px;
-      font-weight: 700;
-
-      background: $white;
-
-      i {
-        font-size: 14px;
-      }
-    }
-
-    .heigher {
-      color: $success;
-    }
-
-    .lower {
-      color: $danger;
+      min-width: 58px;
+      font-size: 11px;
+      padding: 0 8px;
     }
   }
-
-  /* ================= RESPONSIVE ================= */
-
-  @media (max-width: 767px) {
-    .dashboard-stat {
-      padding: 18px;
-
-      h3 {
-        font-size: 22px;
-      }
-
-      .stat-icon {
-        width: 50px;
-        height: 50px;
-
-        i {
-          font-size: 20px;
-        }
-      }
-    }
-  }
+}
 
   /* ================= MINI CARDS ================= */
 
@@ -1288,8 +1298,7 @@ justify-content: space-around;
   flex-wrap: wrap;
 
   .revenue-card{
-    flex: 1;
-    min-width: 220px;
+    min-width: 280px;
 
     border: 1px solid $border;
     border-radius: 12px;
@@ -1311,8 +1320,7 @@ justify-content: space-around;
     }
   }
   .expense-card {
-    flex: 1;
-    min-width: 220px;
+    min-width: 200px;
 
     border: 1px solid $border;
     border-radius: 12px;
@@ -1505,6 +1513,7 @@ justify-content: space-around;
 }
 
 /* ================= CATEGORY ================= */
+
 
 .category-list {
   display: flex;

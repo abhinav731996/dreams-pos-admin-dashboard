@@ -1,5 +1,3 @@
-// Dashboard.jsx
-
 import CustomerOverview from "../../components/charts/CustomerOverview";
 import OrderStatics from "../../components/charts/OrderStatics";
 import SalesChart from "../../components/charts/SalesChart";
@@ -53,15 +51,15 @@ const Dashboard = () => {
           <div className="col-xl-3 col-md-6">
             <div className="dashboard-stat orange">
               <div className="stat-icon">
-                <i class="bi bi-file-earmark-text"></i>
+                <i className="bi bi-file-earmark-text"></i>
               </div>
 
-              <div>
+              <div  className="stat-content">
                 <p>Total Sales</p>
-                <div className="d-flex gap-2">
-                  <h3>$48,988,078</h3>
+                <div className="stat-value">
+                  <h4>$48,988,078</h4>
                   <div className="heigher">
-                    <i class="bi bi-arrow-up-short"></i>
+                    <i className="bi bi-arrow-up-short"></i>
                     +22%
                   </div>
                 </div>
@@ -72,15 +70,15 @@ const Dashboard = () => {
           <div className="col-xl-3 col-md-6">
             <div className="dashboard-stat dark">
               <div className="stat-icon">
-                <i class="bi bi-repeat"></i>
+                <i className="bi bi-repeat"></i>
               </div>
 
-              <div>
+              <div className="stat-content">
                 <p>Total Sales Return</p>
-                <div className="d-flex gap-2">
-                  <h3>$16,478,145</h3>
+                <div className="stat-value">
+                  <h4>$16,478,145</h4>
                   <div className="lower">
-                    <i class="bi bi-arrow-down-short"></i>
+                    <i className="bi bi-arrow-down-short"></i>
                     -22%
                   </div>
                 </div>
@@ -94,12 +92,12 @@ const Dashboard = () => {
                 <i className="bi bi-gift"></i>
               </div>
 
-              <div>
+              <div className="stat-content">
                 <p>Total Purchase</p>
                 <div className="d-flex gap-2">
-                  <h3>$24,145,789</h3>
+                  <h4>$24,145,789</h4>
                   <div className="heigher">
-                    <i class="bi bi-arrow-up-short"></i>
+                    <i className="bi bi-arrow-up-short"></i>
                     +22%
                   </div>
                 </div>
@@ -110,15 +108,15 @@ const Dashboard = () => {
           <div className="col-xl-3 col-md-6">
             <div className="dashboard-stat blue">
               <div className="stat-icon">
-                <i class="bi bi-caret-down-square"></i>
+                <i className="bi bi-caret-down-square"></i>
               </div>
 
-              <div>
+              <div className="stat-content">
                 <p>Total Purchase Return</p>
-                <div className="d-flex gap-2">
-                  <h3>$18,458,747</h3>
+                <div className="stat-value">
+                  <h4>$18,458,747</h4>
                   <div className="heigher">
-                    <i class="bi bi-arrow-up-short"></i>
+                    <i className="bi bi-arrow-up-short"></i>
                     +22%
                   </div>
                 </div>
@@ -172,7 +170,7 @@ const Dashboard = () => {
               <div className="card-header-custom">
                 <div className="d-flex gap-2 align-items-center">
                   <button className="cart-icon">
-                    <i class="bi bi-cart"></i>
+                    <i className="bi bi-cart"></i>
                   </button>
                   <h5>Sales & Purchase</h5>
                 </div>
@@ -215,7 +213,7 @@ const Dashboard = () => {
               <div className="card-header-custom">
                 <div className="d-flex gap-2 align-items-center">
                   <button className="exclamation-icon">
-                    <i class="bi bi-exclamation-circle"></i>
+                    <i className="bi bi-exclamation-circle"></i>
                   </button>
                   <h5>Overall Information</h5>
                 </div>
@@ -223,7 +221,7 @@ const Dashboard = () => {
 
               <div className="overall-info">
                 <div className="info-box">
-                  <i class="bi bi-person-check"></i>
+                  <i className="bi bi-person-check"></i>
                   <p>Suppliers</p>
                   <h5>6987</h5>
                 </div>
@@ -248,7 +246,7 @@ const Dashboard = () => {
                   <button className="today-btn">
                     <i className="bi bi-calendar4"></i>
                     Today
-                    <i class="bi bi-chevron-down"></i>
+                    <i className="bi bi-chevron-down"></i>
                   </button>
                 </div>
                 <div className="chart-wrapper">
@@ -261,7 +259,7 @@ const Dashboard = () => {
                       <h3>5.5K</h3>
                       <p>First Time</p>
                       <div className="green-btn">
-                        <i class="bi bi-arrow-up-left"></i> 25%
+                        <i className="bi bi-arrow-up-left"></i> 25%
                       </div>
                     </div>
 
@@ -271,7 +269,7 @@ const Dashboard = () => {
                       <h3>3.5K</h3>
                       <p>Return</p>
                       <span className="green-btn">
-                        <i class="bi bi-arrow-up-left"></i> 25%
+                        <i className="bi bi-arrow-up-left"></i> 25%
                       </span>
                     </div>
                   </div>
@@ -293,7 +291,7 @@ const Dashboard = () => {
                 <button className="today-btn">
                   <i className="bi bi-calendar4"></i>
                   Today
-                  <i class="bi bi-chevron-down"></i>
+                  <i className="bi bi-chevron-down"></i>
                 </button>
               </div>
 
@@ -367,7 +365,7 @@ const Dashboard = () => {
                 <button className="today-btn">
                   <i className="bi bi-calendar4"></i>
                   Today
-                  <i class="bi bi-chevron-down"></i>
+                  <i className="bi bi-chevron-down"></i>
                 </button>
               </div>
 
@@ -427,7 +425,7 @@ const Dashboard = () => {
         <button className="today-btn">
           <i className="bi bi-calendar4"></i>
           2025
-          <i class="bi bi-chevron-down"></i>
+          <i className="bi bi-chevron-down"></i>
         </button>
       </div>
 
@@ -590,7 +588,7 @@ const Dashboard = () => {
         <button className="today-btn">
           <i className="bi bi-calendar4"></i>
           Weekly
-          <i class="bi bi-chevron-down"></i>
+          <i className="bi bi-chevron-down"></i>
         </button>
       </div>
 
@@ -668,7 +666,7 @@ const Dashboard = () => {
         <button className="today-btn">
           <i className="bi bi-calendar4"></i>
           Weekly
-          <i class="bi bi-chevron-down"></i>
+          <i className="bi bi-chevron-down"></i>
         </button>
       </div>
 

@@ -22,12 +22,12 @@ const SalesStaticsChart = () => {
         },
       },
 
-      colors: ["#0D9488", "#EA580C"],
+      colors: ["#0E9384", "#E04F16"],
 
       plotOptions: {
         bar: {
-          borderRadius: 10,
-          columnWidth: "35%",
+          borderRadius: 5,
+          columnWidth: "55%",
         },
       },
 

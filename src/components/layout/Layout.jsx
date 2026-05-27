@@ -1,23 +1,45 @@
-import Sidebar from './Sidebar'
-import Navbar from './Navbar'
-import Footer from './Footer'
+import { useState } from "react";
+
+import Sidebar from "./Sidebar";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 const Layout = ({ children }) => {
+
+  const [showSidebar, setShowSidebar] = useState(false);
+
   return (
-    <div className='main-layout'>
-      <Sidebar />
+    <div className="main-layout">
 
-      <div className='main-content'>
-        <Navbar />
+      {/* SIDEBAR */}
+      <Sidebar
+        showSidebar={showSidebar}
+        setShowSidebar={setShowSidebar}
+      />
 
-        <div className='content-wrapper'>
+      {/* OVERLAY */}
+      <div
+        className={`sidebar-overlay ${
+          showSidebar ? "show-overlay" : ""
+        }`}
+        onClick={() => setShowSidebar(false)}
+      ></div>
+
+      <div className="main-content">
+
+        <Navbar
+          showSidebar={showSidebar}
+          setShowSidebar={setShowSidebar}
+        />
+
+        <div className="content-wrapper">
           {children}
         </div>
-        <Footer/>
+
+        <Footer />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Layout
-
+export default Layout;

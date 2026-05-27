@@ -53,3 +53,21 @@ button {
   padding: 20px;
   box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
+
+.sidebar-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 998;
+  display: none;
+}
+
+.sidebar-overlay.show-overlay {
+  display: block;
+}
+
+@media (min-width: 769px) {
+  .sidebar-overlay {
+    display: none !important;
+  }
+}

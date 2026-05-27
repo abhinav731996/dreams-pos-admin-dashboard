@@ -1,9 +1,13 @@
 import { NavLink } from "react-router-dom";
 import logo from "../../assets/icons/logo/Logo.png";
 
-const Sidebar = () => {
+const Sidebar = ({ showSidebar }) => {
   return (
-    <aside className="sidebar">
+    <aside
+  className={`sidebar ${
+    showSidebar ? "show-sidebar" : ""
+  }`}
+>
       {/* LOGO */}
       <div className="sidebar-header">
         <NavLink to="/dashboard">

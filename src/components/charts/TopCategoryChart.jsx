@@ -41,7 +41,7 @@ const TopCategoryChart = () => {
       options={chartData.options}
       series={chartData.series}
       type="donut"
-      height={250}
+      height={180}
     />
   );
 };
