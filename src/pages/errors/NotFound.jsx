@@ -1,6 +1,8 @@
 
 import { Link } from "react-router-dom";
 
+import notFound from "/images/404/error.PNG";
+
 const NotFound = () => {
   return (
     <div className="not-found-page">
@@ -8,7 +10,7 @@ const NotFound = () => {
         {/* IMAGE */}
         <div className="error-image">
           <img
-            src="src/assets/images/404/error.PNG"
+            src={notFound}
             alt="404 Error"
           />
         </div>
