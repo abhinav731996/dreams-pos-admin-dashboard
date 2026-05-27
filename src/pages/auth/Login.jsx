@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 import { useNavigate, Link } from "react-router-dom";
 import { login } from "../../feature/authSlice";
 
-import authImg from "../../../public/images/auth/login.jpg";
+import authImg from "/images/auth/login.jpg";
 import logo from "../../assets/icons/logo/Logo.png";
 
 

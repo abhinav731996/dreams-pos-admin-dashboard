@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
-import authImg2 from "../../../public/images/auth/register.jpg";
+import authImg2 from "/images/auth/register.jpg";
 import logo from "../../assets/icons/logo/Logo.png";
 
 const Register = () => {
