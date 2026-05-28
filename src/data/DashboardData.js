@@ -135,7 +135,7 @@ export const recentSales = [
     amount: "$126",
     date: "Today",
     status: "Cancelled",
-    image: "/images/dashboard/recentSales/image.jpg",
+    image: "/images/dashboard/recentSales/image-1.jpg",
   },
   {
     id: 3,
@@ -144,7 +144,7 @@ export const recentSales = [
     amount: "$89",
     date: "15 Jan 2025",
     status: "Onhold",
-    image: "/images/dashboard/recentSales/image.jpg",
+    image: "/images/dashboard/recentSales/image-2.jpg",
   },
   {
     id: 4,
@@ -153,7 +153,7 @@ export const recentSales = [
     amount: "$65",
     date: "12 Jan 2025",
     status: "Processing",
-    image: "/images/dashboard/recentSales/image.jpg",
+    image: "/images/dashboard/recentSales/image-3.jpg",
   },
   {
     id: 5,
@@ -162,7 +162,7 @@ export const recentSales = [
     amount: "$87.56",
     date: "11 Jan 2025",
     status: "Completed",
-    image: "/images/dashboard/recentSales/image.jpg",
+    image: "/images/dashboard/recentSales/image-4.jpg",
   },
 ];
 
