@@ -141,7 +141,7 @@
     margin-bottom: 8px;
     font-size: 14px;
     font-weight: 500;
-    color: rgba(255, 255, 255, 0.85);
+    color: $text-gray ;
   }
 
   .stat-value {
@@ -1011,7 +1011,7 @@
 
 .danger-pill {
   background: #fee2e2;
-  color: #dc2626;
+  color: $danger;
 }
 
 /* ================= TRANSACTIONS ================= */

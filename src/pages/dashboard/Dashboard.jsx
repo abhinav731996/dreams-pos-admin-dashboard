@@ -94,7 +94,7 @@ const Dashboard = () => {
 
               <div className="stat-content">
                 <p>Total Purchase</p>
-                <div className="d-flex gap-2">
+                <div className="d-flex justify-content-between">
                   <h4>$24,145,789</h4>
                   <div className="heigher">
                     <i className="bi bi-arrow-up-short"></i>
